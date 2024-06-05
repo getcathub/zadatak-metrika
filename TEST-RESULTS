@@ -1,0 +1,174 @@
+Sistemsko testiranje:
+
+Unos:2+3
+Očekivani rezultat:5.0
+Dobijen rezultat:5.0 
+
+Unos:2+3*4
+Očekivani rezultat:14.0 
+Dobijen rezultat:14.0 
+
+Unos:10-3/2
+Očekivani rezultat:8.5 
+Dobijen rezultat:8.5 
+
+Unos:-2+5
+Očekivani rezultat:3.0 
+Dobijen rezultat:3.0 
+
+Unos:-2*-5
+Očekivani rezultat:10.0 
+Dobijen rezultat:ERROR 
+
+Unos:2.5*3
+Očekivani rezultat:7.5 
+Dobijen rezultat:7.5 
+
+Unos:10.5-2.3
+Očekivani rezultat:8.2 
+Dobijen rezultat:8.2 
+
+Unos:2*(3+4)
+Očekivani rezultat:14.0 
+Dobijen rezultat:ERROR 
+
+Unos:(2+3)*4
+Očekivani rezultat:20.0 
+Dobijen rezultat:ERROR 
+
+Unos:2+3*4-5/2
+Očekivani rezultat:11.5 
+Dobijen rezultat:11.5 
+
+Unos:10+5-3*2/4
+Očekivani rezultat:13.5 
+Dobijen rezultat:13.5 
+
+Unos:1000000+5000000-3000000
+Očekivani rezultat:3000000.0 
+Dobijen rezultat:3000000.0 
+
+Unos:-1000000*2-5000000-3000000
+Očekivani rezultat:-10000000.0 
+Dobijen rezultat:-1.0E7 
+
+Unos:Infinity+5
+Očekivani rezultat:Infinity 
+Dobijen rezultat:Infinity 
+
+Unos:5/0
+Očekivani rezultat:Infinity 
+Dobijen rezultat:Infinity 
+
+Unos:2&3
+Očekivani rezultat:ERROR 
+Dobijen rezultat:ERROR 
+
+Unos:10@5
+Očekivani rezultat:ERROR 
+Dobijen rezultat:ERROR 
+
+Unos:10 5
+Očekivani rezultat:ERROR 
+Dobijen rezultat:ERROR 
+
+Unos:3+++6*---2
+Očekivani rezultat:ERROR 
+Dobijen rezultat:ERROR
+
+Unos:5+
+Očekivani rezultat:ERROR
+Dobijen rezultat:5.0
+
+Unos:*3
+Očekivani rezultat:ERROR
+Dobijen rezultat:ERROR
+
+Unos:(2+3
+Očekivani rezultat:ERROR
+Dobijen rezultat:ERROR
+
+Unos:2+3)
+Očekivani rezultat:ERROR
+Dobijen rezultat:ERROR
+
+Unos:10/(5-5)
+Očekivani rezultat:ERROR
+Dobijen rezultat:ERROR
+
+Unos:(5-5)/(2-2)
+Očekivani rezultat:ERROR
+Dobijen rezultat:ERROR
+
+Unos:2.5+3*(4.75-1.25)/2.5
+Očekivani rezultat:8.0
+Dobijen rezultat:ERROR
+
+Unos:2*3+(4-1)*5/2
+Očekivani rezultat:11.5
+Dobijen rezultat:ERROR
+
+Unos:1234567890.987654321*0.123456789
+Očekivani rezultat:1.5241579E8
+Dobijen rezultat:1.5241579E8
+
+Unos:-2.5*(-3.75)+1.25
+Očekivani rezultat:10.625
+Dobijen rezultat:ERROR
+
+Unos:-1000000*2-(-5000000)-3000000
+Očekivani rezultat:0.0
+Dobijen rezultat:ERROR
+
+Na osnovu rezultata testiranja, identifikovala sam sledeće probleme u trenutnoj implementaciji:
+
+Nepodržavanje negativnih brojeva u nekim operacijama.
+Nepodržavanje zagrada u izrazima.
+Problemi sa nepotpunim izrazima.
+Problemi sa složenim izrazima koji uključuju više različitih operacija i zagrada.
+
+
+Jedinicno testiranje:
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+
+public class CalculatorTest {
+
+    @Test
+    public void testSabiranje() {
+        assertEquals("5.0", Calculator.Run("2+3"));
+    }
+
+    @Test
+    public void testMnozenje() {
+        assertEquals("10.0", Calculator.Run("2*5"));
+    }
+
+    @Test
+    public void testDeljenje() {
+        assertEquals("4.0", Calculator.Run("20/5"));
+    }
+
+    @Test
+    public void testMesoviteOperacije() {
+        assertEquals("17.0", Calculator.Run("3*5+2"));
+    }
+
+    @Test
+    public void testNegativniBrojevi() {
+        assertEquals("-1.0", Calculator.Run("-2+1"));
+    }
+
+    @Test
+    public void testDecimalNumbers() {
+        assertEquals("3.5", Calculator.Run("1.5+2"));
+    }
+
+}
+
+
+Rezultat:
+Tests passed: 6
+
