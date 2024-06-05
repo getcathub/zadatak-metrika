@@ -133,7 +133,7 @@
 | C:\java_programs\zadatakMetrika\src\Start.java | 15 | Position literals first in String comparisons |
 | C:\java_programs\zadatakMetrika\src\Start.java | 19 | System.out.println is used |
 
-# Koriscenje alata cloc za brojanje linija koda:
+# Korišćenje alata cloc za brojanje linija koda:
 
 - 3 text files.
 - 2 unique files.
@@ -145,6 +145,6 @@
 | **SUM:** | 2     | 61    | 5       | 148  |
 
 
-# Analiza koriscenjem SpotBugs:
+# Analiza korišćenjem SpotBugs:
 
 IntelliJ SpotBugs plugin: found 0 bugs in 0 class
