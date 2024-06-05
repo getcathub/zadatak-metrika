@@ -1,52 +1,52 @@
-# Analiza korišćenjem Checkstyle
+# Analysis using Checkstyle
 
-## Inspection Results - 36 grešaka
+## Inspection Results - 36 errors
 
-### Calculator - 25 grešaka
-- **Checkstyle:** Utility klase ne bi trebalo da imaju javni ili podrazumevani konstruktor.
-- **Checkstyle:** Nedostaje Javadoc komentar.
-- **Checkstyle:** Promenljiva 'finalResult' mora biti privatna i imati pristupne metode.
-- **Checkstyle:** Klasa Operations bi trebalo da bude deklarisana kao finalna.
-- **Checkstyle:** Nedostaje Javadoc komentar.
-- **Checkstyle:** Nedostaje Javadoc komentar.
-- **Checkstyle:** Nedostaje Javadoc komentar.
-- **Checkstyle:** Nedostaje Javadoc komentar.
-- **Checkstyle:** Naziv 'ToString' mora da odgovara obrascu '^[a-z][a-zA-Z0-9]*$'.
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 103).
-- **Checkstyle:** Nedostaje Javadoc komentar.
-- **Checkstyle:** Naziv 'Run' mora da odgovara obrascu '^[a-z][a-zA-Z0-9]*$'.
-- **Checkstyle:** Parametar expression bi trebalo da bude finalan.
-- **Checkstyle:** Parametar expression bi trebalo da bude finalan.
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 81).
-- **Checkstyle:** Naziv 'Calculate' mora da odgovara obrascu '^[a-z][a-zA-Z0-9]*$'.
-- **Checkstyle:** Parametar numbers bi trebalo da bude finalan.
-- **Checkstyle:** Parametar operations bi trebalo da bude finalan.
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 97).
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 89).
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 86).
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 82).
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 82).
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 87).
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 91).
+### Calculator - 25 errors
+- **Checkstyle:** Utility classes should not have a public or default constructor.
+- **Checkstyle:** Missing a Javadoc comment.
+- **Checkstyle:** Variable 'finalResult' must be private and have accessor methods.
+- **Checkstyle:** Class Operations should be declared as final.
+- **Checkstyle:** Missing a Javadoc comment.
+- **Checkstyle:** Missing a Javadoc comment.
+- **Checkstyle:** Missing a Javadoc comment.
+- **Checkstyle:** Missing a Javadoc comment.
+- **Checkstyle:** Name 'ToString' must match pattern '^[a-z][a-zA-Z0-9]*$'.
+- **Checkstyle:** Line is longer than 80 characters (found 103).
+- **Checkstyle:** Missing a Javadoc comment.
+- **Checkstyle:** Name 'Run' must match pattern '^[a-z][a-zA-Z0-9]*$'.
+- **Checkstyle:** Parameter expression should be final.
+- **Checkstyle:** Parameter expression should be final.
+- **Checkstyle:** Line is longer than 80 characters (found 81).
+- **Checkstyle:** Name 'Calculate' must match pattern '^[a-z][a-zA-Z0-9]*$'.
+- **Checkstyle:** Parameter numbers should be final.
+- **Checkstyle:** Parameter operations should be final.
+- **Checkstyle:** Line is longer than 80 characters (found 97).
+- **Checkstyle:** Line is longer than 80 characters (found 89).
+- **Checkstyle:** Line is longer than 80 characters (found 86).
+- **Checkstyle:** Line is longer than 80 characters (found 82).
+- **Checkstyle:** Line is longer than 80 characters (found 82).
+- **Checkstyle:** Line is longer than 80 characters (found 87).
+- **Checkstyle:** Line is longer than 80 characters (found 91).
 
-### Calculator.java - 2 greške
-- **Checkstyle:** Fajl ne završava sa novom linijom.
-- **Checkstyle:** Nedostaje package-info.java fajl.
+### Calculator.java - 2 errors
+- **Checkstyle:** File does not end with a newline.
+- **Checkstyle:** Missing package-info.java file.
 
-### Start - 6 grešaka
-- **Checkstyle:** Utility klase ne bi trebalo da imaju javni ili podrazumevani konstruktor.
-- **Checkstyle:** Nedostaje Javadoc komentar.
-- **Checkstyle:** Parametar args bi trebalo da bude finalan.
-- **Checkstyle:** Naziv 'Expression' mora da odgovara obrascu '^[a-z][a-zA-Z0-9]*$'.
-- **Checkstyle:** Linija je duža od 80 karaktera (nađeno 83).
-- **Checkstyle:** Linija ima prazne prostore.
+### Start - 6 errors
+- **Checkstyle:** Utility classes should not have a public or default constructor.
+- **Checkstyle:** Missing a Javadoc comment.
+- **Checkstyle:** Parameter args should be final.
+- **Checkstyle:** Name 'Expression' must match pattern '^[a-z][a-zA-Z0-9]*$'.
+- **Checkstyle:** Line is longer than 80 characters (found 83).
+- **Checkstyle:** Line has trailing spaces.
 
-### Start.java - 3 greške
-- **Checkstyle:** Fajl sadrži tab karaktere (ovo je prva instanca).
-- **Checkstyle:** Fajl ne završava sa novom linijom.
-- **Checkstyle:** Nedostaje package-info.java fajl.
+### Start.java - 3 errors
+- **Checkstyle:** File contains tab characters (this is the first instance).
+- **Checkstyle:** File does not end with a newline.
+- **Checkstyle:** Missing package-info.java file.
 
-# Analiza korišćenjem PMD-a
+# Analiza korišćenjem PMD-a:
 
 | File | Line | Problem |
 |------|------|---------|
@@ -133,21 +133,18 @@
 | C:\java_programs\zadatakMetrika\src\Start.java | 15 | Position literals first in String comparisons |
 | C:\java_programs\zadatakMetrika\src\Start.java | 19 | System.out.println is used |
 
-Koriscenje alata cloc za brojanje linija koda:
+# Koriscenje alata cloc za brojanje linija koda:
 
-   3 text files.
-   2 unique files.
-   2 files ignored.
-github.com/AlDanial/cloc v 2.00 T=0.02 s (116.5 files/s, 12461.4 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Java                             2             61              5            148
--------------------------------------------------------------------------------
-SUM:                             2             61              5            148
--------------------------------------------------------------------------------
+- 3 text files.
+- 2 unique files.
+- 2 files ignored.
+
+| Language | Files | Blank | Comment | Code |
+|----------|-------|-------|---------|------|
+| java     | 2     | 61    | 5       | 148  |
+| **SUM:** | 2     | 61    | 5       | 148  |
 
 
-Analiza koriscenjem SpotBugs:
+# Analiza koriscenjem SpotBugs:
 
 IntelliJ SpotBugs plugin: found 0 bugs in 0 class
