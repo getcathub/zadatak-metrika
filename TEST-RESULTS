@@ -136,13 +136,13 @@ Dobijen rezultat: 3.6000004
 Zaključak:
 Na osnovu urađenog sistemskog testiranja, mogu da zaključim da kalkulator ima sledeće propuste:
 
-Obrada negativnih brojeva: Kalkulator nije u stanju da pravilno izračuna izraze koji 
+Kalkulator nije u stanju da pravilno izračuna izraze koji 
 uključuju množenje i deljenje sa negativnim brojevima gde su i jedan i drugi broj negativni. 
-Kalkulator nije u stanu da pravilno izračuna kada je prvi broj pozitivan a drugi negativan.
+Kalkulator nije u stanju da pravilno izračuna kada je prvi broj pozitivan a drugi negativan.
 
-Korišćenje zagrada: Kalkulator vraća grešku svaki put kada se u izrazu koriste zagrade.
+Kalkulator vraća grešku svaki put kada se u izrazu koriste zagrade.
 
-Obrada složenih izraza: Kalkulator može da obradi složene izraze, ali ne one koji uključuju zagrade.
+Kalkulator može da obradi složene izraze, ali ne i one koji uključuju zagrade.
 
 Kalkulator može imati sitne razlike u rezultatima pri radu s decimalnim brojevima, što može biti uzrokovano ograničenom preciznošću.
 
