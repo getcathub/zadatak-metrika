@@ -116,11 +116,15 @@ Unos: -1000000*2-(-5000000)-3000000
 Očekivani rezultat: 0.0
 Dobijen rezultat: ERROR
 
+Unos: -7/-5
+Očekivani rezultat: 1.4
+Dobijen rezultat: ERROR
+
 Zaključak:
 Na osnovu urađenog sistemskog testiranja, mogu da zaključim da kalkulator ima sledeće propuste:
 
 Obrada negativnih brojeva u množenju: Kalkulator nije u stanju da pravilno izračuna izraze koji 
-uključuju množenje sa negativnim brojevima.
+uključuju množenje i deljenje sa negativnim brojevima.
 
 Korišćenje zagrada: Kalkulator vraća grešku svaki put kada se u izrazu koriste zagrade.
 
