@@ -133,22 +133,22 @@
 | C:\java_programs\zadatakMetrika\src\Start.java | 15 | Position literals first in String comparisons |
 | C:\java_programs\zadatakMetrika\src\Start.java | 19 | System.out.println is used |
 
-Korišćenje alata cloc za brojanje linija koda:
+Koriscenje alata cloc za brojanje linija koda:
 
-       3 tekstualne datoteke.
-       2 jedinstvene datoteke.
-       2 ignorisane datoteke.
+       3 text files.
+       2 unique files.
+       2 files ignored.
 
-github.com/AlDanial/cloc v 2.00  T=0.02 s (116.5 datoteka/s, 12461.4 linija/s)
+github.com/AlDanial/cloc v 2.00  T=0.02 s (116.5 files/s, 12461.4 lines/s)
 -------------------------------------------------------------------------------
-Jezik                       datoteke       prazno         komentar          kod
+Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 Java                             2             61              5            148
 -------------------------------------------------------------------------------
-SUMA:                            2             61              5            148
+SUM:                             2             61              5            148
 -------------------------------------------------------------------------------
 
 
-Analiza korišćenjem SpotBugs:
+Analiza koriscenjem SpotBugs:
 
-IntelliJ SpotBugs dodatak: pronađeno 0 grešaka u 0 klase
+IntelliJ SpotBugs plugin: found 0 bugs in 0 class
