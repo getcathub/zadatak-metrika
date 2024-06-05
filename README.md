@@ -139,15 +139,10 @@ Koriscenje alata cloc za brojanje linija koda:
        2 unique files.
        2 files ignored.
 
-github.com/AlDanial/cloc v 2.00  T=0.02 s (116.5 files/s, 12461.4 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Java                             2             61              5            148
--------------------------------------------------------------------------------
-SUM:                             2             61              5            148
--------------------------------------------------------------------------------
-
+github.com/AlDanial/cloc v 2.00 T=0.02 s (116.5 files/s, 12461.4 lines/s)
+Language files blank comment code
+Java 2 61 5 148
+SUM: 2 61 5 148
 
 Analiza koriscenjem SpotBugs:
 
